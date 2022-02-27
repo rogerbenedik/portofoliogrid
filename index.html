@@ -88,30 +88,92 @@
                 <h3>My Skills</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio laudantium debitis quam, unde
                     temporibus velit!</p>
-                    <hr>
-                    <h4>HTML 5</h4>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success" style="width: 100%;"></div>
-                    </div>
-                    <h4>CSS 3</h4>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success" style="width: 100%;"></div>
-                    </div>
-                    <h4>JavaScript</h4>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success" style="width: 80%;"></div>
-                    </div>
-                    <h4>PHP</h4>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success" style="width: 75%;"></div>
-                    </div>
-                    <h4>Python</h4>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success" style="width: 60%;"></div>
-                    </div>
+                <hr>
+                <h4>HTML 5</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width: 100%;"></div>
+                </div>
+                <h4>CSS 3</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width: 100%;"></div>
+                </div>
+                <h4>JavaScript</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width: 80%;"></div>
+                </div>
+                <h4>PHP</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width: 75%;"></div>
+                </div>
+                <h4>Python</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width: 60%;"></div>
+                </div>
             </div>
         </div>
+        <!--Resume-->
 
+        <div id="resume" class="collapse">
+            <div class="card card-body bg-success text-white py-5">
+                <h2>My Resume</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, amet?</p>
+            </div>
+            <div class="card card-body py-5">
+                <h3>Where Have I Worked?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ratione aperiam dicta hic
+                    doloribus accusamus.</p>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-tittle">DevMaster</h4>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam illum
+                                eius aspernatur!</p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Position: Full Stack Developer
+                                </p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Phone: (55) 555-555
+                                </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates 2019 - 2022</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-tittle">Web Desginer</h4>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam illum
+                                eius aspernatur!</p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Position: Web Desginer
+                                </p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Phone: (55) 555-444
+                                </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates 2018 - 2019</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-tittle">Web Pro</h4>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam illum
+                                eius aspernatur!</p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Position: Front End
+                                </p>
+                                <p class="p-2 mb-3 bg-dark text-white">
+                                    Phone: (55) 1221-555
+                                </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates 2017 - 2018</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -140,7 +202,9 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
     <script>
-        $('#year').text(new Date().getFullYear());
+        $('.port-item').click(function () {
+            $('.collapse').collapse('hide');
+        });
     </script>
 
 </body>
